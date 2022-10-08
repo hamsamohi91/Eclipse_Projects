@@ -1,0 +1,25 @@
+package com.POM.automationpractice;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Order {
+
+	@FindBy(xpath = "//span[.='Proceed to checkout']")
+	private WebElement p2check;
+	
+	@FindBy(xpath = "//span[.='Proceed to checkout']")
+	private WebElement p2check2;
+	
+	
+	@FindBy(xpath = "//input[@type='checkbox']")
+	private WebElement agree;
+	
+	@FindBy(xpath = "(//span[normalize-space(.)='Proceed to checkout'])[2]")
+	private WebElement p2check3;
+	
+	@FindBy(xpath = "//a[@class='bankwire']")
+	private WebElement bank;
+	
+	
+}

@@ -1,0 +1,54 @@
+package com.POM.automationpractice;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Evening_Dresses {
+
+	@FindBy(xpath = "//img[@title='Printed Dress']")
+	private WebElement clickdress2;
+	
+	
+	@FindBy(xpath = "//iframe[@class='fancybox-iframe']")
+	private WebElement frame2;
+
+	@FindBy(xpath = "//i[@class='icon-plus']")
+	private WebElement count2;
+
+	@FindBy(xpath = "//select[@class='form-control attribute_select no-print']")
+	private WebElement size2;
+
+	
+	@FindBy(name  = "Pink")
+	private WebElement color2;
+
+	@FindBy(xpath  = "//span[.='Add to cart']")
+	private WebElement add2cart2;
+
+	public WebElement getClickdress2() {
+		return clickdress2;
+	}
+
+	public WebElement getFrame2() {
+		return frame2;
+	}
+
+	public WebElement getCount2() {
+		return count2;
+	}
+
+	public WebElement getSize2() {
+		return size2;
+	}
+
+	public WebElement getColor2() {
+		return color2;
+	}
+
+	public WebElement getAdd2cart2() {
+		return add2cart2;
+	}
+
+	
+	
+}

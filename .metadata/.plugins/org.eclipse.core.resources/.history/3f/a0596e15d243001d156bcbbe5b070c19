@@ -1,0 +1,15 @@
+package com.object.manager;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class My_Store2 {
+
+	@FindBy(xpath = "//span[.='I confirm my order']")
+	private WebElement confrim;
+
+	
+
+	
+	
+}

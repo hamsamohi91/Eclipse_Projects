@@ -1,0 +1,43 @@
+package com.runner;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import com.utility.Utility_Files;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = ".\\Feature_Automation",
+                 glue = "com.stepdef.autompract",
+                 monochrome = true,
+                 dryRun = false,
+                 publish = true,
+                 plugin = {
+                		 "html:Reports/Autom.html"
+                		 
+                          }
+		
+		)
+public class AutomPractic_Runner extends Utility_Files{
+	
+	public static WebDriver driver;
+	
+	@BeforeClass
+	public static void set_Up() {
+
+		driver = Utility_Files.get_Browser("chrome");
+	
+		get("http://automationpractice.com/index.php");
+	}
+
+	@AfterClass
+	public static void tear_Down() {
+
+		close();
+	}
+	
+}

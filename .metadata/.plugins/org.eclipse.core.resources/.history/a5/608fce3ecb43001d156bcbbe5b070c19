@@ -1,0 +1,15 @@
+package com.POM.automationpractice;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Order {
+
+	@FindBy(xpath = "//span[.='Proceed to checkout']")
+	private WebElement p2check;
+	
+	@FindBy(xpath = "//span[.='Proceed to checkout']")
+	private WebElement p2check2;
+	
+	
+}

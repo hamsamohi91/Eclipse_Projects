@@ -1,0 +1,19 @@
+package com.api.demo;
+
+import org.junit.Test;
+
+import io.restassured.RestAssured;
+
+public class Api_Testing {
+
+	
+	@Test
+	public void Api() {
+
+		RestAssured.baseURI("");
+		
+	}
+	
+	
+	
+}

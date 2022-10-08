@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="422" started-at="2022-10-03T22:29:59 IST" finished-at="2022-10-03T22:29:59 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="422" started-at="2022-10-03T22:29:59 IST" finished-at="2022-10-03T22:29:59 IST">
+      <class name="com.testng.features.Data_Provider_Demo">
+        <test-method status="PASS" signature="player_Data(java.lang.String,java.lang.String)[pri:0, instance:com.testng.features.Data_Provider_Demo@31c88ec8]" name="player_Data" duration-ms="91" started-at="2022-10-03T22:29:59 IST" data-provider="all_Data" finished-at="2022-10-03T22:29:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ind]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Virat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- player_Data -->
+        <test-method status="PASS" signature="player_Data(java.lang.String,java.lang.String)[pri:0, instance:com.testng.features.Data_Provider_Demo@31c88ec8]" name="player_Data" duration-ms="4" started-at="2022-10-03T22:29:59 IST" data-provider="all_Data" finished-at="2022-10-03T22:29:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ind]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rohit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- player_Data -->
+        <test-method status="PASS" signature="player_Data(java.lang.String,java.lang.String)[pri:0, instance:com.testng.features.Data_Provider_Demo@31c88ec8]" name="player_Data" duration-ms="13" started-at="2022-10-03T22:29:59 IST" data-provider="all_Data" finished-at="2022-10-03T22:29:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ind]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Suryakumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- player_Data -->
+      </class> <!-- com.testng.features.Data_Provider_Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

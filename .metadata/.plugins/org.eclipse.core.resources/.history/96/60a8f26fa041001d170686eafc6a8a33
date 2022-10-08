@@ -1,0 +1,131 @@
+package com.stepdef;
+
+import org.openqa.selenium.WebDriver;
+
+import com.object.manager.Project_Object_Manager_Adactin;
+import com.runner.Adactin_Runner;
+import com.singleton.pattern.File_Reader_Manager;
+import com.utility.Utility_Files;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Step_Def extends Utility_Files{
+
+	public static WebDriver driver = Adactin_Runner.driver;
+
+	
+	public static Project_Object_Manager_Adactin manager = new Project_Object_Manager_Adactin(driver);	
+
+	
+	@Given("user Launch The Application")
+	public void user_launch_the_application() {
+
+        get("https://adactinhotelapp.com/");
+	}
+	@When("user Enter The {string} In Username Field")
+	public void user_enter_the_in_username_field(String username) {
+	
+		send_Keys(manager.getHotel().getUname(), username);
+		
+	}
+	@When("user Enter The {string} In Password Field")
+	public void user_enter_the_in_password_field(String password) {
+	
+	send_Keys(manager.getHotel().getPwd(), password);
+	}
+	@Then("user Click On The Login Button And It Navigates To The Search Hotel Page")
+	public void user_click_on_the_login_button_and_it_navigates_to_the_search_hotel_page() {
+
+click_On_Element(manager.getHotel().getLogin());		
+	}
+
+	@When("user Select The {string} In Location Field")
+	public void user_select_the_in_location_field(String string) {
+
+		
+	}
+	@When("user Select The {string} In Hotels Field")
+	public void user_select_the_in_hotels_field(String string) {
+
+	
+	}
+	@When("user Select The {string} In Room Type Field")
+	public void user_select_the_in_room_type_field(String string) {
+	
+	}
+	@When("user Select The {string} In Number OF Rooms Field")
+	public void user_select_the_in_number_of_rooms_field(String string) {
+
+	}
+	@When("user Enter The {string} In Check In Date Field")
+	public void user_enter_the_in_check_in_date_field(String string) {
+
+	}
+	@When("user Enter The {string} In Check Out Date Field")
+	public void user_enter_the_in_check_out_date_field(String string) {
+
+	}
+	@When("user Select The {string} In Adults Per Room Field")
+	public void user_select_the_in_adults_per_room_field(String string) {
+
+	}
+	@When("user Select The {string} In Children Per Room Field")
+	public void user_select_the_in_children_per_room_field(String string) {
+
+	}
+	@Then("user Click On The Search Button And It Navigates To The Select Hotel Page")
+	public void user_click_on_the_search_button_and_it_navigates_to_the_select_hotel_page() {
+
+	}
+
+	@When("user Click On the Radio Button To Select Hotel")
+	public void user_click_on_the_radio_button_to_select_hotel() {
+
+	}
+	@Then("user Click On The Continue Button And It Navigates To The Book A Hotel Page")
+	public void user_click_on_the_continue_button_and_it_navigates_to_the_book_a_hotel_page() {
+
+	}
+	
+	@When("user Enter The {string} In First Name Field")
+	public void user_enter_the_in_first_name_field(String string) {
+
+	}
+	@When("user Enter The {string} In Last Name Field")
+	public void user_enter_the_in_last_name_field(String string) {
+
+	}
+	@When("user Enter The {string} In Billing Address Field")
+	public void user_enter_the_in_billing_address_field(String string) {
+
+	}
+	@When("user Enter The {string} In Credit Card No. Field")
+	public void user_enter_the_in_credit_card_no_field(String string) {
+
+	}
+	@When("user Select The {string} In Credit Card Type Field")
+	public void user_select_the_in_credit_card_type_field(String string) {
+
+	}
+	@When("user Select The {string} and {string} In Expiry Date Field")
+	public void user_select_the_and_in_expiry_date_field(String string, String string2) {
+
+	}
+	@When("user Enter The {string} In CVV Number Field")
+	public void user_enter_the_in_cvv_number_field(String string) {
+
+	}
+	@Then("user Click On The Book Now Button And HoTel Booking Is Taken Place")
+	public void user_click_on_the_book_now_button_and_ho_tel_booking_is_taken_place() {
+
+	}
+
+
+	
+	
+	
+	
+	
+}

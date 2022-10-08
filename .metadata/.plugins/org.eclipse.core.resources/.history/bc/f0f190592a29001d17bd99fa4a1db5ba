@@ -1,0 +1,40 @@
+package com.selenium.training;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Drop_Down_Html_Multiple {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\welcome\\eclipse-workspace\\Selenium\\driver\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://letcode.in/dropdowns");
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
+
+WebElement heroes = driver.findElement(By.id("superheros"));
+		
+Select s = new Select(heroes);
+
+List<WebElement> all_Options = s.getOptions();
+
+for (int i = 0; i <  all_Options.size(); i++) {
+	
+	if (all_Options.get(i).getText().equals("Ant-Man") || all_Options.get(i).getText().equals("Aquaman")) {
+		
+s.selectByIndex(i);		
+	}
+}
+
+for (WebElement aa : all_Options) {
+	
+	
+}
+	}
+}

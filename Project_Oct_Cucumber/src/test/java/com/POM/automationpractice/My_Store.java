@@ -1,0 +1,24 @@
+package com.POM.automationpractice;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class My_Store {
+
+	public WebDriver driver;//null
+	
+	@FindBy(xpath = "//a[@class='login']")
+	private WebElement signup;
+
+	public My_Store(WebDriver driver) {
+this.driver = driver;
+PageFactory.initElements(driver, this);
+	}
+
+	public WebElement getSignup() {
+		return signup;
+	}
+	
+}

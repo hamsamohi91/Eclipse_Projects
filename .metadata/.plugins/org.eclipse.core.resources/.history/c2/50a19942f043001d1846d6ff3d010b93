@@ -1,0 +1,19 @@
+package com.POM.automationpractice;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Evening_Dresses {
+
+	@FindBy(xpath = "//img[@title='Printed Dress']")
+	private WebElement clickdress2;
+	
+	
+	@FindBy(xpath = "//iframe[@class='fancybox-iframe']")
+	private WebElement frame2;
+
+	@FindBy(xpath = "//iframe[@class='fancybox-iframe']")
+	private WebElement count2;
+
+
+}

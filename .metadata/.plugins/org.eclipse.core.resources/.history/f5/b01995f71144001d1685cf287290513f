@@ -1,0 +1,35 @@
+package com.stepdef.autompract;
+
+import org.openqa.selenium.WebDriver;
+
+import com.object.manager.Project_Object_Manager_AutomationPract;
+import com.runner.AutomPractic_Runner;
+import com.utility.Utility_Files;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+
+public class Step_Def_AutomPract extends Utility_Files{
+
+	public static WebDriver driver = AutomPractic_Runner.driver;
+	
+	public static Project_Object_Manager_AutomationPract manag_Autom = new Project_Object_Manager_AutomationPract(driver);
+
+	@Before
+	public void click_Signin() {
+
+		click_On_Element(manag_Autom.getStore().getSignup());
+		
+	}
+	
+	
+	@After
+	public void sign_Out() {
+
+		
+		click_On_Element(manag_Autom.getOrder_History().getSignouta());
+
+	}
+	
+	
+}

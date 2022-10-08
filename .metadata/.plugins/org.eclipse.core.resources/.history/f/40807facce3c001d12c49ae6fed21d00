@@ -1,0 +1,12 @@
+package com.singleton.pattern;
+
+public class File_Reader_Manager {
+
+	private File_Reader_Manager() {
+	}
+	
+
+	
+	
+	
+}

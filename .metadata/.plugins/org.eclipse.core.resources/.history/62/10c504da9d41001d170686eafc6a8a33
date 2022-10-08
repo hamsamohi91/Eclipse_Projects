@@ -1,0 +1,26 @@
+package com.stepdef;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Step_Def {
+
+	@Given("user Launch The Application")
+	public void user_launch_the_application() {
+    throw new io.cucumber.java.PendingException();
+	}
+	@When("user Enter The {string} In Username Field")
+	public void user_enter_the_in_username_field(String string) {
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("user Enter The {string} In Password Field")
+	public void user_enter_the_in_password_field(String string) {
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("user Click On The Login Button And It Navigates To The Search Hotel Page")
+	public void user_click_on_the_login_button_and_it_navigates_to_the_search_hotel_page() {
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

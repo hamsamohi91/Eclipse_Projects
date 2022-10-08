@@ -1,0 +1,21 @@
+Feature: Hotel Booking In Adactin Application
+
+Scenario: Login Functionality
+
+Given user Launch The Application
+
+When user Enter The "softtester" In Username Field
+
+And user Enter The "adc@123" In Password Field
+
+Then user Click On The Login Button And It Navigates To The Search Hotel Page
+
+Scenario: Search Hotel
+
+When user Select The "London" In Location Field
+
+And user Select The "Hotel Sunshine" In Hotels Field
+
+And user Select The "Super Deluxe" In Room Type Field
+
+And user Select The "10" In Location Field

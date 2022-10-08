@@ -1,0 +1,54 @@
+package com.object.manager;
+
+import org.openqa.selenium.WebDriver;
+
+import com.POM.automationpractice.Casual_Dresses;
+import com.POM.automationpractice.Login;
+import com.POM.automationpractice.My_Account;
+import com.POM.automationpractice.My_Store;
+
+public class Project_Object_Manager_AutomationPract {
+
+	public WebDriver driver;
+	
+	private	My_Store store;
+	
+	private Login logi;
+
+private	My_Account account;
+
+private Casual_Dresses casual_Dress;
+
+
+public Project_Object_Manager_AutomationPract(WebDriver driver2) {
+
+	this.driver= driver2;
+	
+	}
+
+	public My_Store getStore() {
+		store = new My_Store(driver);
+		return store;
+	}
+
+	public Login getLogi() {
+		logi = new Login(driver);
+		
+		return logi;
+	}
+	
+	public My_Account getAccount() {
+		account = new My_Account(driver);
+
+		
+		return account;
+	}
+
+	public Casual_Dresses getCasual_Dress() {
+		
+		casual_Dress = new Casual_Dresses(driver);
+
+			return casual_Dress;
+		}
+	
+}

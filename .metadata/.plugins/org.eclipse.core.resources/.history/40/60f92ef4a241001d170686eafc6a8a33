@@ -1,0 +1,55 @@
+Feature: Hotel Booking In Adactin Application
+
+Scenario: Login Functionality
+
+Given user Launch The Application
+
+When user Enter The "softtester" In Username Field
+
+And user Enter The "adc@123" In Password Field
+
+Then user Click On The Login Button And It Navigates To The Search Hotel Page
+
+Scenario: Search Hotel
+
+When user Select The "London" In Location Field
+
+And user Select The "Hotel Sunshine" In Hotels Field
+
+And user Select The "Super Deluxe" In Room Type Field
+
+And user Select The "10" In Number OF Rooms Field
+
+And user Enter The "15/10/2022" In Check In Date Field
+
+And user Enter The "25/10/2022" In Check Out Date Field
+
+And user Select The "2 - Two" In Adults Per Room Field
+
+And user Select The 1 In Children Per Room Field
+
+Then user Click On The Search Button And It Navigates To The Select Hotel Page
+
+Scenario: Select Hotel
+
+When user Click On the Radio Button To Select Hotel
+
+Then user Click On The Continue Button And It Navigates To The Book A Hotel Page
+
+Scenario: Book A Hotel
+ 
+When user Enter The "AAA" In First Name Field
+
+And user Enter The "BBB" In Last Name Field
+
+And user Enter The "xxx" In Billing Address Field
+
+And user Enter The "1234123412341234" In Credit Card No. Field
+
+And user Select The "VISA" In Credit Card Type Field
+
+And user Select The "10" and "2022" In Expiry Date Field
+
+And user Enter The "234" In CVV Number Field
+
+Then user Click On The Book Now Button And HoTel Booking Is Taken Place 
